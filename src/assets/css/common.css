@@ -1,0 +1,15 @@
+.content .el-select {
+    width: 82%;
+}
+.content .el-form-item__label {
+    padding: 0;
+}
+.server .el-transfer-panel {
+    width: 42%
+}
+.server .el-transfer-panel__body {
+    height: 86px;
+}
+.server .el-transfer {
+    padding: 0 32px;
+}

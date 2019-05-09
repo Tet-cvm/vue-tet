@@ -1,0 +1,18 @@
+img{display:block;}
+a, u{text-decoration:none;}
+b, em{font-weight:normal;font-style:normal;}
+ul li{list-style-type:none;}
+
+.flex{display:flex;display:-webkit-flex;}
+.f-Center{display:flex;display:-webkit-flex;justify-content:center;-webkit-justify-content:center;}
+.flexRow{display:flex;display:-webkit-flex;flex-direction:row;-webkit-flex-direction:row;}
+.flexWrap{display:flex;display:-webkit-flex;flex-wrap:wrap;-webkit-flex-wrap:wrap;}
+.flexColumn{display:flex;display:-webkit-flex;flex-direction:column;-webkit-flex-direction:column;}
+.flexLeft{flex:1;display:flex;display:-webkit-flex;justify-content:flex-start;-webkit-justify-content:flex-start;}
+.flexRight{flex:1;display:flex;display:-webkit-flex;justify-content:flex-end;-webkit-justify-content:flex-end;}
+.flexCenter{flex:1;display:flex;display:-webkit-flex;justify-content:center;-webkit-justify-content:center;}
+.flexStart{display:flex;display:-webkit-flex;justify-content:flex-start;-webkit-justify-content:flex-start;}
+.flexEnd{display:flex;display:-webkit-flex;justify-content:flex-end;-webkit-justify-content:flex-end;}
+.alignCenter{align-items:center;-webkit-align-items:center;}
+
+.Breadcrumb {padding: 16px 0 0 24px;}

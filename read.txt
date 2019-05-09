@@ -1,0 +1,8 @@
+Home    => 服务器数据
+Project => 项目管理
+Deploy  => 部署管理
+Group   => 用户管理
+
+
+
+//删除 node_moudles  然后 npm i 装回

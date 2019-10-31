@@ -1,6 +1,6 @@
 var path = require('path');
 
-const HOST = '169.254.100.201'
+const HOST = '172.18.28.82';  
 
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
@@ -49,6 +49,7 @@ module.exports = {
         // host: '0.0.0.0',
         host: HOST,
         hot: true,
+        https: true,
         hotOnly: true,
         headers: {
             'X-Requested-With': 'XMLHttpRequest'
@@ -58,25 +59,19 @@ module.exports = {
         port: 8080,
         open: true,
         allowedHosts: [
-            'http://' + HOST + ':5000/'
+            'http://wind.slogger.cn/'
+            // 'http://172.18.28.82:8080/'
         ],
         proxy:{
             '/api': {
-                target: 'http://' + HOST + ':5000/api/',
+                target: 'http://wind.slogger.cn/',
+                // target: 'http://172.18.28.82:8080/',
                 ws: true,
                 changeOrigin: true,
                 pathRewrite: {
                   '^/api' : ''
                 }
-              },
-              '/shell': {
-                target: 'http://' + HOST + ':5000/shell/',
-                ws: true,
-                changeOrigin: true,
-                pathRewrite: {
-                  '^/shell' : ''
-                }
-              },
+              }
         }, //设置代理
         // before: app=> {}
     }

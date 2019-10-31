@@ -1,4 +1,4 @@
-export function onTips(that, type, info) {
+export function toast(that, type, info) {
     that.$message({
         message: info,
         type: type

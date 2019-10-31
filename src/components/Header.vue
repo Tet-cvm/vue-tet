@@ -1,61 +1,74 @@
 <template>
-  <div class="header flex">
-    <div class="collapse flexLeft" @click="onCollapse(isCollapse)">
-      <img src="@/assets/image/isCollapse.jpg" alt="">
+    <div class="header flex">
+        <div class="collapse flexLeft" @click="onCollapse(isCollapse)">
+            <template v-if="isCollapse">
+                <i class="fa fa-sign-in fa-lg"></i>
+            </template>
+            <template v-else>
+                <i class="fa fa-sign-in fa-lg tetRotate"></i>
+            </template>
+        </div>
+        <div class="tetUser flexRight">
+            <img :src="$store.state.user_icon" alt="">
+            <span>
+                <el-badge class="item">{{ $store.state.user_name }}</el-badge>
+            </span>
+            <div class="quit" @click="onQuit()">退出</div>
+        </div>
     </div>
-    <div class="tetUser flexRight">
-      <img @click="onNotice(isNotice)" src="@/assets/image/tetUser.jpg" alt="">
-      <span @click="onNotice(isNotice)">
-        <el-badge is-dot class="item">lxm</el-badge>
-      </span>
-      <i @click="onNotice(isNotice)" class="el-icon-arrow-down"></i>
-    </div>
-    <div class="quit" @click="onQuit()">退出</div>
-  </div>
 </template>
 
 <script lang="ts">
-export default {
-  props: ['onCollapse', 'onNotice', 'isCollapse', 'isNotice', 'onQuit'],
-  name: 'Header',
-}
+    export default {
+        props: ['onCollapse', 'isCollapse', 'onQuit'],
+        name: 'Header',
+        data() {
+            return {
+
+            }
+        },
+        created() {
+        },
+        mounted() {
+
+        }
+    }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 .header {
-  padding: 13px 0;
+    padding: 13px 0;
 }
 .collapse {
-  flex: 1;
-  cursor: pointer;
+    flex: 1;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
-.collapse img {
-  width: 32px;
-  height: 32px;
-  opacity: 0.88;
+.collapse i {
+    color: #909399;
 }
 .tetUser {
-  flex: 10;
+    flex: 16;
 }
 .tetUser img {
-  width: 32px;
-  height: 32px;
-  border-radius: 25px;
-  cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 25px;
+    cursor: pointer;
 }
 .tetUser span {
-  margin: 0 0 0 12px;
-  font-size: 17px;
-  line-height: 30px;
-  cursor: pointer;
+    display: inline-block;
+    margin: 0 26px 0 12px;
+    font-size: 17px;
+    line-height: 30px;
+    cursor: pointer;
 }
-.tetUser i {
-  margin: 0 26px 0 8px;
-  line-height: 30px;
-  cursor: pointer;
+.tetRotate {
+    transform: rotate(180deg);
 }
 .quit {
-  line-height: 30px;
+    line-height: 30px;
 }
 </style>

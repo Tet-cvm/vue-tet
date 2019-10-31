@@ -16,8 +16,8 @@ export default {
 </script>
 
 <style lang="less">
-*{margin:0px;padding:0px;font-size:16px;border:0px;outline: 0;font-weight:normal;-webkit-text-size-adjust: none;-webkit-tap-highlight-color: transparent;-webkit-box-sizing: border-box;box-sizing: border-box;}
-html,body{margin:0px;padding:0px;width:100%;font-family: 'Avenir', Helvetica, Arial, sans-serif;font-size:16px;background-color:#f4f4f4;}
+*{margin:0px;padding:0px;font-size:15px;border:0px;outline: 0;font-weight:normal;-webkit-text-size-adjust: none;-webkit-tap-highlight-color: transparent;-webkit-box-sizing: border-box;box-sizing: border-box;}
+html,body{margin:0px;padding:0px;width:100%;font-family: 'Avenir', Helvetica, Arial, sans-serif;font-size:15px;background-color:#f4f4f4;}
 img{display:block;}
 a, u{text-decoration:none;}
 b, em, i{font-weight:normal;font-style:normal;}

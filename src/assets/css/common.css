@@ -1,15 +1,143 @@
-.content .el-select {
-    width: 82%;
+.container .el-table td {
+    padding: 8px 0;
 }
-.content .el-form-item__label {
+.search .input-with-select {
+    width: 360px;
+}
+/*新增对话框样式*/
+.dialogAdd .el-dialog__header {
+    text-align: center;
+}
+.dialogAdd .el-dialog__body {
+    padding: 30px 48px 30px 20px;
+}
+.manage .dialogAdd .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.manage .dialogAdd .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.manage .dialogAdd .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+}
+.manage .dialogAdd .avatar {
+    width: 68px;
+    height: 68px;
+    display: block;
+}
+.movie .dialogAdd .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.movie .dialogAdd .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.movie .dialogAdd .Avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 108px;
+    height: 136px;
+    line-height: 136px;
+    text-align: center;
+}
+.movie .dialogAdd .Avatar {
+    width: 108px;
+    height: 136px;
+    display: block;
+}
+/*编辑对话框样式*/
+.dialogEdit .el-dialog__header {
+    text-align: center;
+}
+.dialogEdit .el-dialog__body {
+    padding: 30px 48px 30px 20px;
+}
+.manage .dialogEdit .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.manage .dialogEdit .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.manage .dialogEdit .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+}
+.manage .dialogEdit .avatar {
+    width: 68px;
+    height: 68px;
+    display: block;
+}
+.movie .dialogEdit .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.movie .dialogEdit .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.movie .dialogEdit .Avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 108px;
+    height: 136px;
+    line-height: 136px;
+    text-align: center;
+}
+.movie .dialogEdit .Avatar {
+    width: 108px;
+    height: 136px;
+    display: block;
+}
+/*删除对话框样式*/
+.dialogDel .el-dialog__header {
+    text-align: center;
+}
+.dialogDel .el-dialog__body {
+    padding: 24px 20px;
+    text-align: center;
+}
+.dialogDel .el-dialog__footer {
     padding: 0;
+    border-top: 1px solid #e2e2e2e2;
 }
-.server .el-transfer-panel {
-    width: 42%
+.dialogDel .el-dialog__footer span {
+    display: flex;
+    flex-direction: row;
 }
-.server .el-transfer-panel__body {
-    height: 86px;
+.dialogDel .el-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 0;
 }
-.server .el-transfer {
-    padding: 0 32px;
+.dialogDel .el-button:first-child {
+    border-right: 1px solid #e2e2e2e2; 
+}
+.dialogDel .el-button+.el-button {
+    margin: 0;
 }
